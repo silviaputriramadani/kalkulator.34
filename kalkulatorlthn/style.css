@@ -1,0 +1,44 @@
+body{
+    text-align: center;
+    background-color: rgb(244, 218, 253);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    
+}
+form{
+    background-color: #ffff;
+    border-radius: 20px;
+    padding: 30px;
+    width: 400px;
+    margin: 0 auto;
+    text-decoration: 0
+}
+h1{
+    margin: 0 0 15px;
+}
+input, select, button, a{
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100px;
+    font-size: 20px;
+    text-decoration: none;
+}
+select{
+    width: 60px;
+    text-align: center;
+    border-radius: 20px;
+}
+button, a{
+    display: block;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 315px;
+    background-color: rgb(202, 202, 249);
+    color: white;
+    border: 0;
+    text-decoration: 0;
+    
+}
+a{
+    margin-top: 15px;
+}
