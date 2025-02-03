@@ -14,10 +14,10 @@
         <select name="operator">
             <option>+</option>
             <option>-</option>
-            <option>:</option>
+            <option>%</option>
             <option>x</option> 
             <option>^</option>
-            <option>%</option>
+            <option>:</option>
         </select>
         <input type="number" name="angka2">
         <button type="submit">Hitung</button>

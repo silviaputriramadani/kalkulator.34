@@ -14,26 +14,35 @@
             $angka1 = $_GET['angka1'];
             $angka2 = $_GET['angka2'];
             $operator = $_GET['operator'];
+            $hasil = "Tidak bisa dibagi 0!";
 
-            if($operator == '+'){
+            if ($operator == ':') {
+                if ($angka2 == 0) {
+                    $hasil = "Tidak bisa dibagi 0!"; 
+                } else {
+                    $hasil = $angka1 / $angka2;
+                }
+            } else if ($operator == '+') {
                 $hasil = $angka1 + $angka2;
-            }else if($operator == '-'){
+            } else if ($operator == '-') {
                 $hasil = $angka1 - $angka2;
-            }else if($operator == ':'){
-                $hasil = $angka1 / $angka2;
-            }else if($operator == 'x'){
+            } else if ($operator == 'x') {
                 $hasil = $angka1 * $angka2;
-            }else if($operator == '^'){
-                $hasil = pow($angka1 , $angka2);
-            }else if($operator == '%'){
+            } else if ($operator == '^') {
+                $hasil = pow($angka1, $angka2);
+            } else if ($operator == '%') {
                 $hasil = $angka1 % $angka2;
-            }  
+            }
 
-            echo $angka1 . $operator . $angka2 . '=' . $hasil;
+            if(is_string($hasil)) {
+                echo $hasil;
+            } else {
+                echo "$angka1 $operator $angka2 = $hasil";
+            }
         ?>
         <a href="index.php">Kembali</a>
         <a type="button" onclick="return window.print();">Cetak</a>
-        </form>
+    </form>
     
 </body>
 </html>
